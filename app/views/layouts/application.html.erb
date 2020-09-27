@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsRedismananger</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <div class="topnav-title"><%= link_to 'Redis Manager', root_path %></div>
+      <div class="topnav-page"><%= link_to 'Connections', controller: 'connections' %></div>
+
+    </div>
+
+    <div class="main">
+      <%= yield %>
+    </div>
+
+
+  </body>
+</html>

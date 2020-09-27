@@ -1,0 +1,26 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'Connections', connections_path %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @connection.name %></li>
+  </ol>
+</nav>
+
+<p>
+  <strong>Name:</strong>
+  <%= @connection.name %>
+</p>
+<p>
+  <strong>Hostname:</strong>
+  <%= @connection.hostname %>
+</p>
+<p>
+  <strong>Port:</strong>
+  <%= @connection.port %>
+</p>
+<p>
+  <strong>Keys:</strong>
+  <%= @keys %>
+</p>
+
+
+<%= link_to 'Back', connections_path %>
